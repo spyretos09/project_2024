@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline/Seaplane Ticket  search and Reservation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        form {
+            margin-top: 50px;
+        }
+        input[type="text"], input[type="date"] {
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .top-right {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .button-container {
+            display: inline-block;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-right button-container">
+        <a href="client.html">Client</a>
+        <a href="admin.html">Admin</a>
+    </div>
+    <div class="container">
+        <h1>Airline/Seaplane Ticket Search and Reservation</h1>
+        <form action="#" method="get">
+            <input type="text" name="from" placeholder="From (Departure)">
+            <input type="text" name="to" placeholder="To (Destination)">
+            <input type="date" name="departure_date" placeholder="Departure Date">
+            <input type="date" name="return_date" placeholder="Return Date">
+            <input type="submit" value="Search Flights">
+        </form>
+    </div>
+</body>
+</html>
